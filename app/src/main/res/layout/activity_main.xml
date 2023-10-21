@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/circle"
+        app:layout_constraintEnd_toStartOf="@+id/squaretext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/square" />
+
+    <TextView
+        android:id="@+id/squaretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="202dp"
+        android:text="Square"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/square"
+        app:layout_constraintTop_toTopOf="@+id/square"
+        tools:text="Square" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/triangle"
+        app:layout_constraintEnd_toStartOf="@+id/Circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="217dp"
+        android:text="Circle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle"
+        tools:text="Circle" />
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle"
+        app:layout_constraintEnd_toStartOf="@+id/triangletext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle"
+        app:srcCompat="@drawable/triangle" />
+
+    <TextView
+        android:id="@+id/trianglerighttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="136dp"
+        android:text="Right triangle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/triangleright"
+        app:layout_constraintTop_toTopOf="@+id/triangleright"
+        tools:text="Right triangle" />
+
+    <ImageView
+        android:id="@+id/rhombus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/triangleright"
+        app:layout_constraintEnd_toStartOf="@+id/rhombustext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle"
+        app:srcCompat="@drawable/rhombus" />
+
+    <TextView
+        android:id="@+id/rhombustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="22dp"
+        android:text="Rhombus"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rhombus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rhombus"
+        tools:text="Rhombus" />
+
+    <TextView
+        android:id="@+id/rectangletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="171dp"
+        android:text="Rectangle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rectangle"
+        app:layout_constraintTop_toTopOf="@+id/rectangle"
+        tools:text="Rectangle" />
+
+    <ImageView
+        android:id="@+id/triangleright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trianglerighttext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rhombus"
+        app:srcCompat="@drawable/triangle_right" />
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/rhombus"
+        app:layout_constraintEnd_toStartOf="@+id/rectangletext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triangle"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/triangletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="192dp"
+        android:text="Triangle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/triangle"
+        app:layout_constraintTop_toTopOf="@+id/triangle"
+        tools:text="Triangle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
