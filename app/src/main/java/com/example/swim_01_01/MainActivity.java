@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    //https://www.tomaszx.pl/materialy/pum_lab1.pdf
+    //Excercise 1: Geometry
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), RectangleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView circle=(TextView)findViewById(R.id.circletext);
+        circle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (getApplicationContext(), CircleActivity.class);
                 startActivity(intent);
             }
         });
